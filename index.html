@@ -55,30 +55,90 @@
 @media(max-width:800px){.land-nav{height:70px;padding:0 20px}.land-links{display:none}.land-hero{grid-template-columns:1fr;padding:48px 22px 35px;gap:0}.land-copy h1{font-size:58px}.land-copy>p{font-size:13px}.land-stage{height:390px;transform:scale(.88);transform-origin:top center;margin-bottom:-35px}.bottle-3d{left:18%;top:60px}.jar-3d{right:14%;top:160px}.box-3d{right:0;top:65px}.land-pedestal{bottom:25px}.land-glow{width:330px;height:330px}.land-ring{width:360px}.float-chip.one{left:0;top:55px}.float-chip.two{right:0;bottom:55px}.land-benefits{grid-template-columns:1fr}.land-below{padding:65px 20px}.land-footer{gap:15px;flex-wrap:wrap}.land-actions .btn{padding:10px 12px;font-size:11px}}
 @media(prefers-reduced-motion:reduce){.product-3d{animation:none}}
 
+
+/* Editorial luxury art direction */
+.landing.luxe{--lux-ink:#18251f;--lux-deep:#172720;--lux-paper:#f1efe8;--lux-muted:#73796f;--lux-gold:#b7a27a;background:var(--lux-paper);color:var(--lux-ink);font-family:Arial,Helvetica,sans-serif}
+.luxe *{box-sizing:border-box}.lux-nav{height:94px;padding:0 7.1%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #18251f16;position:relative;z-index:5}
+.lux-brand{display:flex;align-items:center;gap:10px;color:var(--lux-ink);font-size:10px;letter-spacing:.19em;font-weight:800;line-height:1.15}.lux-brand small{font-size:8px;letter-spacing:.29em;font-weight:500}.lux-symbol{font-family:Georgia,serif;font-size:37px;letter-spacing:-.1em;font-weight:400;color:#526b58}
+.lux-links{display:flex;gap:37px}.lux-links a,.lux-login,.lux-footer button{font-size:9px;letter-spacing:.16em;font-weight:700;color:#626b61;background:none;border:0}.lux-links a:hover,.lux-login:hover{color:#9b8050}
+.lux-nav-actions{display:flex;align-items:center;gap:25px}.lux-cta{background:#263b30;color:#f8f6ef;padding:17px 21px;border:1px solid #263b30;font-size:9px;letter-spacing:.13em;font-weight:700;display:inline-flex;gap:25px;align-items:center;justify-content:space-between;transition:.25s}.lux-cta:hover{background:#405b49;transform:translateY(-2px)}.lux-cta.small{padding:13px 16px;gap:15px}
+.lux-hero{min-height:690px;max-width:1600px;margin:auto;padding:70px 7.1% 62px;display:grid;grid-template-columns:.82fr 1.18fr;align-items:center;position:relative;gap:4%}
+.lux-hero-copy{padding:8px 0 38px;position:relative;z-index:2}.lux-overline{font-size:9px;letter-spacing:.2em;font-weight:700;color:#6e786d;display:flex;align-items:center;gap:11px}.lux-overline>span{width:25px;height:1px;background:#a88e63}
+.lux-hero h1{font-family:Georgia,'Times New Roman',serif;font-weight:400;font-size:clamp(65px,7.4vw,108px);letter-spacing:-.065em;line-height:.91;margin:34px 0 25px;color:#1b2a22}.lux-hero h1 i,.lux-manifesto i,.lux-section-head h2 i,.lux-quote i{font-weight:400;color:#8b8a70}
+.lux-hero-copy>p{max-width:360px;font-family:Georgia,serif;font-size:17px;line-height:1.7;color:#73786f;margin:0 0 34px}
+.lux-hero-actions{display:flex;align-items:center;gap:19px;flex-wrap:wrap}.lux-caption{font-size:8px;letter-spacing:.15em;color:#899087}.lux-edition{margin-top:68px;font-size:9px;letter-spacing:.15em;color:#7c8378}.lux-edition span{padding:0 8px;color:#b29b70}
+.lux-art{height:555px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 50% 44%,#d7d7c9 0,#c5cbbd 28%,#aab5a6 66%,#778c7c 100%);isolation:isolate;box-shadow:0 30px 70px #1d30201b}
+.lux-art:before{content:"";position:absolute;inset:0;background:linear-gradient(110deg,#fff2 0%,transparent 32%,#162a2010 72%,#0b211a22 100%);z-index:4;pointer-events:none}
+.lux-art-grain{position:absolute;inset:0;opacity:.17;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.19'/%3E%3C/svg%3E");z-index:5;pointer-events:none}
+.lux-orbit{position:absolute;border:1px solid #f2f0e45c;border-radius:50%;width:500px;height:190px;left:50%;top:48%;transform:translate(-50%,-50%) rotate(-28deg)}.orbit-b{width:570px;height:240px;transform:translate(-50%,-50%) rotate(52deg);border-color:#263c3026}
+.lux-plinth{position:absolute;left:50%;transform:translateX(-50%);border-radius:50%;width:76%;height:105px;bottom:40px;background:linear-gradient(180deg,#e8e6da,#a6aa9c 65%,#747e71);box-shadow:0 25px 30px #18271e45,inset 0 7px 12px #fff9}
+.plinth-back{width:67%;height:77px;bottom:91px;background:linear-gradient(180deg,#f4f1e7,#c1c1b3 70%,#858e80);box-shadow:0 10px 20px #25372a25}
+.lux-product{position:absolute;filter:drop-shadow(19px 27px 15px #1b2c2240);transform-style:preserve-3d;z-index:2}
+.lux-bottle{width:145px;height:300px;left:25%;top:95px;transform:rotate(-5deg)}
+.lux-bottle-glass{position:absolute;inset:29px 0 0;border-radius:26px 26px 20px 20px;background:linear-gradient(90deg,#53695b 0%,#849582 12%,#d2d4c5 37%,#aeb9a8 61%,#536c5a 100%);border:1px solid #e9e8d8a8;box-shadow:inset 10px 0 16px #fff5,inset -13px 0 20px #233a2e55,0 3px 5px #1c302340}
+.lux-bottle-glass:after{content:"";position:absolute;left:17px;top:20px;width:12px;height:205px;border-radius:20px;background:linear-gradient(90deg,#ffffff77,#ffffff08);filter:blur(3px)}
+.lux-pump{position:absolute;top:0;left:50px;width:46px;height:39px;background:linear-gradient(90deg,#9c9d8d,#f0eee2 48%,#858c7d);border-radius:4px 4px 1px 1px;z-index:2}
+.lux-pump:before{content:"";position:absolute;width:57px;height:9px;left:-5px;top:-7px;background:linear-gradient(#e8e6d9,#8d9788);border-radius:3px}
+.lux-pump i{position:absolute;width:37px;height:8px;right:-29px;top:-7px;background:linear-gradient(#f1eee2,#a6ac9c);border-radius:0 5px 5px 0}
+.lux-bottle-label{position:absolute;left:13px;right:13px;top:126px;height:115px;text-align:center;color:#f1efe4;background:linear-gradient(130deg,#263b30,#405847);padding:22px 5px;box-shadow:0 5px 13px #1c302844}
+.lux-bottle-label b{font:13px Georgia,serif;letter-spacing:.12em;line-height:1.15;display:block}.lux-bottle-label span{display:block;font:8px Georgia,serif;color:#c5b58e;margin:10px}.lux-bottle-label small{display:block;font-size:6px;letter-spacing:.2em;color:#d6ddce}
+.lux-bottle-reflection{position:absolute;left:18px;right:18px;bottom:10px;height:15px;background:#fff3;filter:blur(10px)}
+.lux-jar{width:150px;height:140px;right:17%;top:235px;transform:rotate(5deg)}
+.lux-jar-cap{position:absolute;top:0;left:5px;right:5px;height:33px;border-radius:5px;background:linear-gradient(180deg,#e6e2d3,#9ca394);box-shadow:0 6px 8px #1d302833}
+.lux-jar-glass{position:absolute;top:28px;left:0;right:0;height:106px;border-radius:9px 9px 18px 18px;background:linear-gradient(90deg,#728474,#d4d4c5 38%,#a4b09f 70%,#5b705e);border:1px solid #e7e4d7;box-shadow:inset 8px 0 12px #fff6,inset -9px 0 15px #203a2c55}
+.lux-jar-label{position:absolute;top:66px;left:15px;right:15px;text-align:center;color:#f1efe4}.lux-jar-label b{font:23px Georgia,serif;letter-spacing:.1em}.lux-jar-label span{display:block;font-size:6px;letter-spacing:.2em;margin-top:6px}
+.lux-carton{width:118px;height:210px;right:5%;top:120px;transform:rotate(7deg);filter:drop-shadow(15px 23px 13px #1b2c2244)}
+.lux-carton-front{position:absolute;inset:0;background:linear-gradient(110deg,#e6dfcd,#c9c2ad 72%,#a8a995);border:1px solid #f4efe1;box-shadow:inset 8px 0 15px #fff7,inset -8px 0 15px #56604d25;padding:58px 12px;color:#3a493c;text-align:center}
+.lux-carton-front b{font:22px/.98 Georgia,serif;letter-spacing:-.04em}.lux-carton-front span{display:block;font-size:5px;letter-spacing:.17em;margin-top:16px}.lux-carton-front i{display:block;width:20px;height:1px;background:#8f866f;margin:13px auto}
+.lux-carton-side{position:absolute;right:-17px;top:7px;width:17px;height:203px;background:linear-gradient(90deg,#8f9685,#697565);transform:skewY(-25deg);transform-origin:left}
+.lux-art-note{position:absolute;color:#f5f2e7;font-size:7px;letter-spacing:.2em;z-index:6}.lux-art-note span{display:block;font-size:6px;letter-spacing:.15em;margin-top:6px;color:#e1e5d8}.note-top{top:28px;left:30px}.note-bottom{bottom:24px;right:28px}
+.lux-hero-index{position:absolute;bottom:22px;left:7.1%;right:7.1%;display:flex;justify-content:space-between;font-size:8px;letter-spacing:.16em;color:#8b9084}
+.lux-manifesto{padding:110px 10%;display:grid;grid-template-columns:.55fr 1.3fr .8fr;align-items:center;gap:35px;border-bottom:1px solid #24362b1c}
+.lux-manifesto-label{font-size:8px;letter-spacing:.19em;color:#858a7e;font-weight:700}.lux-manifesto p{font:clamp(32px,4vw,54px)/1.1 Georgia,serif;letter-spacing:-.045em;margin:0;color:#23342a}.lux-manifesto>span{font:14px/1.8 Georgia,serif;color:#7b8076;max-width:260px}
+.lux-collection{padding:100px 7.1% 115px;max-width:1600px;margin:auto}.lux-section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:38px}.lux-section-head h2{font:clamp(40px,5vw,64px)/1 Georgia,serif;letter-spacing:-.06em;margin:20px 0 0}.lux-text-link{border:0;background:none;font-size:8px;letter-spacing:.15em;font-weight:700;color:#59685b;padding:12px 0;border-bottom:1px solid #a4a995}
+.lux-tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.lux-tile{min-width:0}.tile-art{height:340px;position:relative;overflow:hidden;display:grid;place-items:center}.tile-body .tile-art{background:linear-gradient(140deg,#d7ded1,#9cab98)}.tile-face .tile-art{background:linear-gradient(140deg,#e7e0d2,#b7b3a3)}.tile-personal .tile-art{background:linear-gradient(140deg,#c8d2c8,#899c8d)}
+.tile-sculpture{position:absolute;filter:drop-shadow(17px 20px 13px #20352838)}.sculpt-bottle{width:94px;height:200px;border-radius:18px 18px 15px 15px;background:linear-gradient(90deg,#536c5a,#d5d8c9 40%,#788c78);border:1px solid #fff9;transform:rotate(-8deg);left:33%;top:65px}.sculpt-bottle:before{content:"";position:absolute;width:34px;height:27px;left:29px;top:-23px;background:linear-gradient(90deg,#9ba596,#e8e6d9,#7f8b7c);border-radius:4px}
+.sculpt-tube{width:75px;height:175px;background:linear-gradient(90deg,#e4dfd0,#fff8e8 42%,#b7b6a5);clip-path:polygon(10% 0,90% 0,82% 90%,18% 90%);transform:rotate(13deg);right:23%;top:110px}
+.sculpt-jar{width:150px;height:120px;border-radius:12px 12px 23px 23px;background:linear-gradient(90deg,#758675,#e0dfd1 45%,#829380);top:120px}.sculpt-jar:before{content:"";position:absolute;top:-25px;left:6px;right:6px;height:26px;background:linear-gradient(#f3f0e4,#a4ab9d);border-radius:5px}
+.sculpt-stone{width:95px;height:40px;border-radius:50%;background:linear-gradient(140deg,#eee9dc,#a7a795);bottom:40px;right:20%;filter:blur(.2px)}
+.sculpt-box{width:145px;height:190px;background:linear-gradient(100deg,#314c3c,#526c55 60%,#243a2e);top:72px;transform:rotate(8deg);border:1px solid #ffffff66}.sculpt-box:after{content:"S. / DAILY RITUAL";position:absolute;inset:70px 10px auto;text-align:center;color:#e9e3d2;font:15px Georgia,serif;letter-spacing:.1em}
+.sculpt-disc{width:115px;height:115px;border-radius:50%;border:1px solid #e4e9dc;background:linear-gradient(140deg,#d7dfd3,#879c8b);bottom:-20px;right:16%;box-shadow:inset 0 0 0 12px #ffffff25}
+.tile-meta{display:grid;grid-template-columns:1fr auto;gap:7px;padding:17px 2px;border-bottom:1px solid #25392b2b}.tile-meta>span:first-child{grid-column:1/-1;font-size:8px;letter-spacing:.16em;color:#8a8e82}.tile-meta b{font:22px Georgia,serif;font-weight:400;color:#26372c}.tile-arrow{font-size:17px;color:#8b927f}
+.lux-quote{background:#20372a;color:#f0eee4;padding:105px 20px;text-align:center}.lux-quote-mark{font:90px/.6 Georgia,serif;color:#b8a77e}.lux-quote p{font:clamp(34px,5vw,60px)/1.15 Georgia,serif;letter-spacing:-.05em;margin:24px 0}.lux-quote i{color:#c2b38d}.lux-quote>span{font-size:8px;letter-spacing:.2em;color:#c5cdbf}
+.lux-footer{background:#17271e;color:#bfc8ba;padding:32px 7.1%;display:flex;align-items:center;justify-content:space-between;gap:20px}.lux-footer .lux-brand{color:#f3f0e5}.lux-footer .lux-symbol{color:#c5b58e}.lux-footer>span{font-size:8px;letter-spacing:.15em;color:#a6b2a4}.lux-footer button{color:#e2e7dd;border-bottom:1px solid #687b68;padding:8px 0}
+@media(max-width:900px){.lux-hero{grid-template-columns:1fr;gap:30px;padding-top:55px}.lux-hero-copy{padding-bottom:0}.lux-art{height:510px}.lux-hero-index{position:static;margin-top:10px}.lux-manifesto{grid-template-columns:1fr;gap:18px;padding:70px 8%}.lux-manifesto>span{max-width:480px}.lux-tiles{gap:10px}.tile-art{height:270px}}
+@media(max-width:620px){.lux-nav{height:76px;padding:0 20px}.lux-links,.lux-login{display:none}.lux-nav-actions{gap:0}.lux-hero{padding:44px 20px 25px}.lux-hero h1{font-size:66px;margin:25px 0 18px}.lux-hero-copy>p{font-size:15px}.lux-edition{margin-top:40px}.lux-art{height:410px}.lux-bottle{left:19%;top:65px;transform:scale(.82) rotate(-5deg);transform-origin:top left}.lux-jar{right:14%;top:205px;transform:scale(.8) rotate(5deg);transform-origin:top right}.lux-carton{right:0;top:85px;transform:scale(.75) rotate(7deg);transform-origin:top right}.lux-plinth{bottom:24px}.lux-plinth.plinth-back{bottom:65px}.lux-art-note{font-size:6px}.lux-hero-index{font-size:7px}.lux-section-head{display:block}.lux-text-link{margin-top:22px}.lux-collection{padding:70px 20px}.lux-tiles{grid-template-columns:1fr;gap:27px}.tile-art{height:300px}.lux-manifesto{padding:70px 22px}.lux-quote{padding:80px 22px}.lux-footer{padding:28px 22px;flex-wrap:wrap}.lux-footer>span{width:100%}}
+@media(prefers-reduced-motion:reduce){.lux-cta{transition:none}}
 </style>
 </head>
 <body>
 
-<div id="landing" class="landing">
- <header class="land-nav">
-  <a class="brand" href="#" onclick="return false"><span class="brand-mark">S</span> simple hygiene</a>
-  <nav class="land-links"><a href="#essentials">The essentials</a><a href="#promise">Our promise</a><a href="#essentials">Everyday care</a></nav>
-  <div class="land-actions"><button class="btn btn-outline" onclick="openAuth('login')">Log in</button><button class="btn btn-primary" onclick="openAuth('signup')">Get started <span>↗</span></button></div>
+<div id="landing" class="landing luxe">
+ <header class="lux-nav">
+  <a class="lux-brand" href="#" onclick="return false"><span class="lux-symbol">S.</span><span>SIMPLE<br><small>HYGIENE</small></span></a>
+  <nav class="lux-links"><a href="#lux-collection">COLLECTION</a><a href="#lux-philosophy">OUR PHILOSOPHY</a><a href="#lux-footer">CONTACT</a></nav>
+  <div class="lux-nav-actions"><button class="lux-login" onclick="openAuth('login')">SIGN IN</button><button class="lux-cta small" onclick="openAuth('signup')">SHOP THE EDIT <span>↗</span></button></div>
  </header>
- <section class="land-hero">
-  <div class="land-copy"><div class="land-kicker"><i></i> A FRESH TAKE ON EVERYDAY CARE</div><h1>Care that feels<br><em>like you.</em></h1><p>Thoughtfully chosen hygiene essentials for the rituals that make every day feel a little better. Simple to discover. Simple to order. Simply you.</p><div class="land-cta"><button class="btn btn-primary" onclick="openAuth('signup')">Explore the collection <span>→</span></button><button class="btn btn-outline" onclick="openAuth('login')">I have an account</button></div><div class="land-trust"><span>Everyday essentials</span><span>Easy ordering</span><span>Made for your routine</span></div></div>
-  <div class="land-stage" aria-label="Three dimensional hygiene product display">
-   <div class="land-glow"></div><div class="land-ring"></div><div class="land-ring r2"></div>
-   <div class="land-pedestal"></div>
-   <div class="product-3d bottle-3d"><div class="bottle-cap"></div><div class="bottle-body"></div><div class="bottle-label"><b>simple<br>hygiene</b><i></i><small>DAILY BODY WASH</small></div></div>
-   <div class="product-3d jar-3d"><div class="jar-lid"></div><div class="jar-body"></div><div class="jar-label"><b>DAILY CARE</b><small>THE EVERYDAY EDIT</small></div></div>
-   <div class="product-3d box-3d"><div class="box-front"><div><b>THE<br>CARE KIT</b><small>ESSENTIALS · NO. 01</small></div></div></div>
-   <div class="float-chip one">✦ Thoughtful essentials<span>For your everyday routine</span></div><div class="float-chip two">01 / SIMPLE CARE<span>Discover your new ritual</span></div>
-  </div>
- </section>
- <div class="land-strip"><span><b>✦</b> EVERYDAY ESSENTIALS</span><span><b>✦</b> A SIMPLER ROUTINE</span><span><b>✦</b> CAREFULLY SELECTED</span></div>
- <section class="land-below" id="essentials"><div class="land-section-head"><div class="eyebrow">THE SIMPLE STANDARD</div><h2>Make room for feeling good.</h2><p>Good routines don't need to be complicated. Find the essentials you reach for, all in one considered place.</p></div><div class="land-benefits" id="promise"><article class="land-benefit"><i>✧</i><h3>The everyday edit</h3><p>Explore a considered selection of personal hygiene and daily care essentials.</p></article><article class="land-benefit"><i>◈</i><h3>Simple by design</h3><p>A clean, easy shopping experience that keeps the focus on what you need.</p></article><article class="land-benefit"><i>↗</i><h3>Your care, your way</h3><p>Keep track of your orders and make your everyday essentials easier to manage.</p></article></div></section>
- <footer class="land-footer"><div class="brand"><span class="brand-mark">S</span> simple hygiene</div><span>Everyday care, made simple.</span><span>© 2026 Simple Hygiene</span></footer>
+ <main>
+  <section class="lux-hero">
+   <div class="lux-hero-copy"><div class="lux-overline"><span></span> THE ART OF EVERYDAY CARE</div><h1>Make the<br>everyday<br><i>exceptional.</i></h1><p>Considered essentials for the rituals that are entirely your own. A quieter kind of luxury, made part of every day.</p><div class="lux-hero-actions"><button class="lux-cta" onclick="openAuth('signup')">DISCOVER THE COLLECTION <span>↗</span></button><span class="lux-caption">PERSONAL CARE, REFINED.</span></div><div class="lux-edition">01 <span>—</span> THE EVERYDAY COLLECTION</div></div>
+   <div class="lux-art" aria-label="Sculptural three-dimensional Simple Hygiene product arrangement">
+    <div class="lux-art-grain"></div><div class="lux-orbit orbit-a"></div><div class="lux-orbit orbit-b"></div>
+    <div class="lux-plinth plinth-back"></div><div class="lux-plinth plinth-front"></div>
+    <div class="lux-product lux-bottle"><div class="lux-pump"><i></i></div><div class="lux-bottle-glass"></div><div class="lux-bottle-label"><b>SIMPLE<br>HYGIENE</b><span>NO. 01</span><small>DAILY CLEANSER</small></div><div class="lux-bottle-reflection"></div></div>
+    <div class="lux-product lux-jar"><div class="lux-jar-cap"></div><div class="lux-jar-glass"></div><div class="lux-jar-label"><b>SH</b><span>BODY BALM</span></div></div>
+    <div class="lux-product lux-carton"><div class="lux-carton-front"><b>THE<br>DAILY<br>RITUAL</b><span>CURATED ESSENTIALS</span><i></i></div><div class="lux-carton-side"></div></div>
+    <div class="lux-art-note note-top">THE SIMPLE EDIT <span>OBJECTS FOR DAILY LIVING</span></div><div class="lux-art-note note-bottom">FORM / FUNCTION / FEELING</div>
+   </div>
+   <div class="lux-hero-index">CAIRO · EST. 2026 <span>SCROLL TO EXPLORE ↓</span></div>
+  </section>
+  <section class="lux-manifesto" id="lux-philosophy"><div class="lux-manifesto-label">A MORE CONSIDERED ROUTINE</div><p>Not more things.<br><i>Better everyday essentials.</i></p><span>We believe personal care should feel effortless. Thoughtfully selected essentials, presented simply, for the moments that make up your day.</span></section>
+  <section class="lux-collection" id="lux-collection"><div class="lux-section-head"><div><div class="lux-overline"><span></span> THE COLLECTION</div><h2>Essentials, <i>elevated.</i></h2></div><button class="lux-text-link" onclick="openAuth('signup')">EXPLORE ALL PRODUCTS ↗</button></div>
+   <div class="lux-tiles"><article class="lux-tile tile-body"><div class="tile-art"><div class="tile-sculpture sculpt-bottle"></div><div class="tile-sculpture sculpt-tube"></div></div><div class="tile-meta"><span>01 / BODY</span><b>Daily body care</b><span class="tile-arrow">↗</span></div></article><article class="lux-tile tile-face"><div class="tile-art"><div class="tile-sculpture sculpt-jar"></div><div class="tile-sculpture sculpt-stone"></div></div><div class="tile-meta"><span>02 / FACE</span><b>Face & skin</b><span class="tile-arrow">↗</span></div></article><article class="lux-tile tile-personal"><div class="tile-art"><div class="tile-sculpture sculpt-box"></div><div class="tile-sculpture sculpt-disc"></div></div><div class="tile-meta"><span>03 / PERSONAL</span><b>Everyday necessities</b><span class="tile-arrow">↗</span></div></article></div>
+  </section>
+  <section class="lux-quote"><div class="lux-quote-mark">“</div><p>Luxury is not an occasion.<br><i>It is how the everyday feels.</i></p><span>THE SIMPLE HYGIENE POINT OF VIEW</span></section>
+ </main>
+ <footer class="lux-footer" id="lux-footer"><a class="lux-brand" href="#"><span class="lux-symbol">S.</span><span>SIMPLE<br><small>HYGIENE</small></span></a><span>EVERYDAY CARE, CONSIDERED.</span><span>© 2026 SIMPLE HYGIENE</span><button onclick="openAuth('login')">CUSTOMER ACCOUNT ↗</button></footer>
 </div>
 
 <div id="auth" class="auth-shell hidden">
